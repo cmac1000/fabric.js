@@ -22,6 +22,10 @@ else {
   } else {
     fabric.window = fabric.document.parentWindow;
   }
+  // fake browser globals for event.js
+  window = fabric.window;
+  document = fabric.document;
+  navigator = fabric.window.navigator;
 }
 
 /**
